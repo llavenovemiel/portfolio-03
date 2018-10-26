@@ -21,8 +21,9 @@ body {
 	width: 45%;
 }
 
+
 .cv {
-	height: 30%;
+	height: 30vh;
 	width: 100%;
 	font-size: 2rem;
 	display: flex;
@@ -30,10 +31,16 @@ body {
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+	background-color: #f2f2f2;
+}
+
+.cv a {
+	text-decoration: none;
+	color: #111111;
 }
 
 .top {
-	height: 40%;
+	height: 40vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -60,7 +67,7 @@ body {
 }
 
 .bottom {
-	height: 30%;
+	height: 30vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -191,21 +198,26 @@ body {
 		float: none;
 		width: 100%;
 		height: auto;
-
 	}
 
 	.cv {
-		height: 10vh;
+		height: 8vh;
+		position: fixed;
+		top: 0;
 	}
 
+
 	.top {
-		height: 12vh;
+		height: 10vh;
 		display: flex;
 		flex-direction: row;
+		position: fixed;
+		top: 8vh;
 	}
 
 	.bottom {
-		height: 10vh;
+		height: 8vh;
+		margin-top: 18vh;
 	}
 
 	.bottom > p {

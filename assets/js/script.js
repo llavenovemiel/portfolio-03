@@ -40,24 +40,37 @@ const toggleWork = () => {
 
 
 // for sticky
-$(document).ready(function() {
-  var stickyNavTop = $('.top').offset().top;
+// $(document).ready(function() {
+//   var stickyNavTop = $('.top').offset().top;
   
-  var stickyNav = function(){
-      var scrollTop = $(window).scrollTop();
+//   var stickyNav = function(){
+//       var scrollTop = $(window).scrollTop();
            
-      if (scrollTop > stickyNavTop) { 
-          $('.top').addClass('sticky');
-      } else {
-          $('.top').removeClass('sticky'); 
-      }
-  };
+//       if (scrollTop >= stickyNavTop) { 
+//           $('.top').addClass('sticky');
+//       } else {
+//           $('.top').removeClass('sticky'); 
+//       }
+//   };
 
-  stickyNav();
-  $(window).scroll(function() {
-    stickyNav();
-  });
-});
+//   stickyNav();
+//   $(window).scroll(function() {
+//     stickyNav();
+//   });
+// });
+
+
+// $(document).ready(function () {  
+//   var top = $('.top').offset().top;
+//   $(window).scroll(function (event) {
+//     var y = $(this).scrollTop();
+//     if (y >= top)
+//       $('.top').addClass('sticky');
+//     else
+//       $('.top').removeClass('sticky');
+//     $('.top').width($('.top').parent().width());
+//   });
+// });
 
 
 // For scrambler effect
