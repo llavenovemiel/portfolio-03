@@ -204,6 +204,15 @@ body {
 		flex-direction: row;
 	}
 
+	.bottom {
+		height: 10vh;
+	}
+
+	.bottom > p {
+		font-size: 1rem;
+	}
+	
+
 	.sticky {
 		position: fixed;
 		top: 0;
@@ -214,10 +223,7 @@ body {
 		font-size: 2.5rem;
 	}
 
-	.bottom {
-		display: none;
-	}
-
+	
 	.right {
 		width: 100%;
 		height: auto;
@@ -231,7 +237,7 @@ body {
 	}
 
 	.work-page {
-		height: 78vh;
+		height: 68vh;
 	}
 
 }
