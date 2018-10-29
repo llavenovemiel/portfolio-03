@@ -5,17 +5,10 @@ const toggleAbout = () => {
 	}
 
 	$(".about-page").slideToggle("slow");
-	
-	if (($(".about-page").css("display")=="block") & (screen.width > 960)) {
-   
-		  $(".about-page").css({"height":"100%","display":"flex", "flex-direction":"row",
-        "justify-content":"space-around"});   
-  }
 
-  if (($(".about-page").css("display")=="block") & (screen.width < 960) & (screen.width > 400)) {
-   
-      $(".about-page").css({"height":"100%","display":"flex", "flex-direction":"column",
-        "justify-content":"space-around","align-items":"center"});   
+  if ($(".about-page").css("display")=="block") {
+    $(".about-page").css({"height":"100%","display":"flex", "flex-direction":"column",
+        "justify-content":"space-around","align-items":"center"});  
   }
 
 
@@ -39,38 +32,6 @@ const toggleWork = () => {
 }
 
 
-// for sticky
-// $(document).ready(function() {
-//   var stickyNavTop = $('.top').offset().top;
-  
-//   var stickyNav = function(){
-//       var scrollTop = $(window).scrollTop();
-           
-//       if (scrollTop >= stickyNavTop) { 
-//           $('.top').addClass('sticky');
-//       } else {
-//           $('.top').removeClass('sticky'); 
-//       }
-//   };
-
-//   stickyNav();
-//   $(window).scroll(function() {
-//     stickyNav();
-//   });
-// });
-
-
-// $(document).ready(function () {  
-//   var top = $('.top').offset().top;
-//   $(window).scroll(function (event) {
-//     var y = $(this).scrollTop();
-//     if (y >= top)
-//       $('.top').addClass('sticky');
-//     else
-//       $('.top').removeClass('sticky');
-//     $('.top').width($('.top').parent().width());
-//   });
-// });
 
 
 // For scrambler effect

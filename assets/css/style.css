@@ -39,6 +39,11 @@ body {
 	color: #111111;
 }
 
+.cv:hover a {
+	/*color: #FF7400;*/
+	color: darkgray;
+}
+
 .top {
 	height: 40vh;
 	width: 100%;
@@ -59,6 +64,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+}
+
+.about:hover,
+.work:hover {
+	/*color: #FF7400;*/
+	color: darkgray;
 }
 
 .shown {
@@ -100,7 +111,7 @@ body {
 
 
 .about-col1 {
-	width: 45%;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -127,6 +138,9 @@ body {
 
 .about-col2 {
 	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .me {
@@ -150,7 +164,11 @@ body {
 .social > a {
 	color: #111111;
 	font-size: 3rem;
+}
 
+.social > a:hover {
+	/*color: #FF7400;*/
+	color: darkgray;
 }
 
 .work-page {
@@ -169,6 +187,10 @@ body {
 .project img {
 	width: 100%;
 	border-radius: 1%;
+}
+
+.project img:hover {
+	opacity: 0.5;
 }
 
 .project p {
